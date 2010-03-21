@@ -1,0 +1,9 @@
+if you ever developed some webapps for the iPhone, you will have noticed the lack of good console.log and console.dir commands.
+
+remoteConsole tries to resolve this problem by sending the output of console.log and console.dir to a different browser of your choice: include client.js.php in your webapps html file, open monitor.html in the browser of your choice and open the debug console (like Firebug). Voila, all* is shown there.
+
+Try it by opening monitor.html in Firefox and opening Firebug and then opening test.html on your iPhone.
+
+*Known Bugs:
+- doesn't work for large or recursive objects which are hard to json.stringify.
+- when you are calling multiple console.* commands in a short period of time, they may not appear in your monitor in the same order they where sent.
